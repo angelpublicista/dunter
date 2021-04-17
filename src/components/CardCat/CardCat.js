@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 class CardCat extends Component {
   render(props) {
     return (
-      <a href="#" className={this.props.style + " du-card-cat"}>
+      <a href={this.props.link} target={this.props.target} className={this.props.style + " du-card-cat"}>
         <figure>
           <img src={this.props.imgBg} className="du-card-cat__cover"></img>
           <figcaption>
