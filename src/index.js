@@ -2,10 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import pink from '@material-ui/core/colors/pink';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#F84F2F'
+    },
+    secondary:{
+      main: '#0091FF',
+      light: 'F2F7FD'
+    }
+  },
+
+  typography: {
+    fontFamily: [
+      'Quicksand',
+      'sans-serif'
+    ].join(','),
+
+    button: {
+      textTransform: "none"
+    }
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
