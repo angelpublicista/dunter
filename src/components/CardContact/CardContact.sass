@@ -1,0 +1,45 @@
+@import './../../_variables'
+
+.du-card-contact
+    background-color: #F2F7FD
+    &__top-bar
+        background-color: #2E2E2E
+        color: white
+        display: flex
+        padding: 1em 2em
+        justify-content: space-between
+        align-items: center
+        &__share
+            background-color: transparent
+            border: none
+            cursor: pointer
+            color: $p-color
+        p
+            font-weight: 700
+            font-size: 1.1em
+        .du-divider-vertical
+            color: rgba(#F2F7FD, .3 )
+            font-size: 1.5em
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 3em 5em
+        &__avatar
+            width: 202px
+            height: 202px
+            object-fit: cover
+            border-radius: 50%
+            border: 3px solid $p-color
+            margin-bottom: 2em
+        &__name
+            font-size: 1.5em
+            font-weight: bold
+            margin-bottom: .3em
+        &__position
+            color: #757575
+            font-size: 1.2em
+            margin-bottom: 1em
+        .du-btn
+            width: 100%
+            margin-top: 1em

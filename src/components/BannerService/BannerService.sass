@@ -1,0 +1,83 @@
+@import './../../variables'
+
+.du-banner-service
+    display: block
+    &__cover
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: all .4s
+    figure
+        position: relative
+        height: 375px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        figcaption
+            position: absolute
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding: 2em
+            color: white
+            text-align: center
+            transition: all .4s
+            .du-circle-bg
+                background-color: $s-color
+                width: 92px
+                height: 92px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-bottom: 1em
+                transition: all .4s
+                svg
+                    path
+                        transition: all .4s
+    &__figcaption-info
+        opacity: 0
+        height: 0
+        transition: all .4s
+        &__title
+            font-size: 2em
+            font-weight: normal
+        &__subtitle
+            font-size: 3em
+            font-weight: 500
+        &__arrow
+            margin-top: 1em
+            transition: all .4s ease-in-out
+    &:hover
+        .du-banner-service__figcaption-info
+            opacity: 1
+            height: 40%
+            &__arrow
+                transform: translateX(30px)
+        .du-circle-bg
+            background-color: white
+            svg
+                path
+                    fill: $s-color
+        .du-banner-service__cover
+            transform: scale(1.1)
+            filter: blur(3px)
+        figcaption
+            background-color: rgba($s-color, .8 )
+    &.style-2
+        .du-circle-bg
+            background-color: $p-color
+        &:hover
+            figcaption
+                background-color: rgba($p-color, .8 )
+            .du-circle-bg
+                background-color: white
+                svg
+                    path
+                        fill: $p-color
