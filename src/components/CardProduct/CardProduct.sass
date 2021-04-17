@@ -1,0 +1,134 @@
+@import './../../variables'
+.du-card-product
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+    height: 370px
+    overflow: hidden
+    transition: $tr
+    a
+        text-decoration: none
+    &__cont-img
+        position: relative
+        height: 240px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__price
+        position: absolute
+        top: 15px
+        left: 15px
+        background-color: $s-color
+        color: white
+        padding: .3em .5em
+        z-index: 1
+        transition: $tr
+    &__caption
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba($s-color, .8 )
+        top: 0
+        transform: translateY(241px)
+        transition: $tr
+        display: flex
+        justify-content: center
+        align-items: center
+        &-item
+            border: 2px solid white
+            width: 54px
+            height: 54px
+            border-radius: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            margin: 0 1em
+            transition: $tr
+            background-color: transparent
+            cursor: pointer
+            &:hover
+                background-color: white
+                color: $s-color
+    &__cont-img
+        &:hover .du-card-product__caption
+            transform: translateY(0)
+        &:hover .du-card-product__price
+            background-color: white
+            color: $s-color
+    &__content
+        padding: 1em 2em 1em 1em
+        position: relative
+    &__line
+        position: absolute
+        right: 0
+        top: 0
+        height: 100%
+        width: 14px
+        background-color: $p-color
+    &__state
+        color: $p-color
+        transition: $tr
+        &:hover
+            color: $s-color
+    &__title
+        color: $t-color
+        margin-top: .5em
+        &:hover
+            text-decoration: underline
+    &__location
+        color: $t-color
+        font-family: 'Quicksand', sans-serif
+        font-weight: 100
+        font-size: 1em
+        margin-bottom: .7em
+        &:hover
+            text-decoration: underline
+    &__status
+        display: flex
+        justify-content: space-between
+        margin-bottom: .5em
+    &__qualification
+        span
+            color: #FCBC5D
+    &__comments
+        span
+            font-size: .8em
+    &__cont-icons
+        display: flex
+        justify-content: space-around
+        border-top: 1px solid #D6D6D6
+        padding-top: .8em
+        opacity: 0
+        transition: $tr
+    &__icon-item
+        text-align: center
+    &__icon-cont-img
+        background-color: $s-color
+        width: 52px
+        height: 52px
+        border-radius: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: .3em
+        img
+            width: 27px
+            height: auto
+    &__icon-number
+        color: $t-color
+        font-family: 'Montserrat', sans-serif
+        font-weight: bold
+        display: block
+    &__icon-name
+        color: $t-color
+    &:hover
+        height: 525px
+    &:hover .du-card-product__cont-icons
+        opacity: 1
+    &__link
+        margin-top: .5em
+        text-align: center
+        a
+            color: $p-color
+            text-decoration: underline
