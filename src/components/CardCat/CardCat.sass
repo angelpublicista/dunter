@@ -1,0 +1,47 @@
+@import './../../variables'
+.du-card-cat
+    display: block
+    &__cover
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: all .4s
+    figure
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 600px
+        width: 100%
+        overflow: hidden
+        figcaption
+            position: absolute
+            height: 30%
+            background-color: rgba($p-color, .8 )
+            width: 90%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding: 2em
+            color: white
+            transition: all .4s
+            img
+                width: 40px
+                height: auto
+                margin-top: 1em
+                transition: all .4s ease-in-out
+    &__title
+        font-size: 2em
+    &:hover
+        .du-card-cat__cover
+            transform: scale(1.1)
+            filter: blur(3px)
+        figcaption
+            height: 90%
+            img
+                transform: translateX(30px)
+    &.style-2
+        figcaption
+            background-color: rgba($s-color, .8 )
