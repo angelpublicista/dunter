@@ -3,15 +3,15 @@ import "./Header.sass";
 import Container from "@material-ui/core/Container";
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import AddCircleIcon from '@material-ui/icons/AddCircle';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
 
-class Header extends Component {
-    render(props) {
+class HeaderUserGuest extends Component {
+    render() {
         return (
-            <div className="du-header user-logued">
+            <div className="du-header user-guest">
                 <Container maxWidth="lg">
-                    <Grid container spacing={5} direction="row" alignItems="center" justify="space-between">
+                    <Grid container spacing={3} direction="row" alignItems="center" justify="space-between">
                         <Grid item xs={12} lg={2}>
                             <a href="#" className="du-header__link-logo">
                                 <h2>DUNTER</h2>
@@ -41,16 +41,16 @@ class Header extends Component {
                                     </li>
 
                                     <li className="du-header__menu__button">
-                                        <Button className="du-button-icon" variant="contained" color="secondary">
+                                        <Button className="du-button-icon" color="secondary">
                                             <AccountCircleIcon fontSize="small" />
-                                            Mi perfil
+                                            Identificarme
                                         </Button>
                                     </li>
 
                                     <li className="du-header__menu__button">
                                         <Button className="du-button-icon" variant="contained" color="primary">
-                                            <AddCircleIcon fontSize="small" />
-                                            Publicar inmueble
+                                            <PersonAddIcon fontSize="small" />
+                                            Registrarme
                                         </Button>
                                     </li>
                                 </ul>
@@ -63,4 +63,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default HeaderUserGuest;

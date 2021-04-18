@@ -1,7 +1,37 @@
+@import './../../_variables'
 .du-header
     width: 100%
-    img
-        width: 100%
-    .ejemplo
-        width: 200px
-        height: 200px
+    background: #FFFFFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-sizing: border-box
+    padding-top: 1em
+    &__link-logo
+        display: block
+        img
+            width: 100%
+    &__menu
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        padding: 1em 2em
+        align-items: center
+        justify-content: flex-end
+        &__item
+            margin: 0 1em
+            a
+                color: #757575
+                text-decoration: none
+                transition: all .4s
+                &:hover
+                    color: $s-color
+            &__link-fav
+                svg
+                    path
+                        transition: all .4s
+                &:hover
+                    svg
+                        path
+                            fill: $s-color
+        &__button
+            margin-left: 1em
