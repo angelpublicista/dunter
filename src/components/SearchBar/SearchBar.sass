@@ -1,0 +1,101 @@
+@import './../../_variables'
+
+.du-search-bar
+    background: #FFFFFF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    display: inline-block
+    padding-left: 1em
+    &__form
+        display: flex
+        align-items: center
+        &__submit
+            background-color: $p-color
+            border: none
+            padding: 1em
+            cursor: pointer
+    .du-form-group
+        margin-right: 2em
+        padding-right: 1em
+        min-width: 80px
+        border-right: 1px solid $p-color
+        color: #757575
+        position: relative
+        user-select: none
+        .custom-text
+            padding: 0 22px
+            font-size: 20px
+            font-weight: 300
+            color: #757575
+            height: 40px
+            line-height: 40px
+            background: #ffffff
+            border: none
+            font-family: 'Quicksand'
+            &::placeholder
+                color: #757575
+                opacity: 1
+                font-weight: 300
+            &:focus
+                border: none
+                outline: none
+        .custom-select
+            position: relative
+            display: flex
+            flex-direction: column
+            .custom-select__trigger
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 0 22px
+                font-size: 20px
+                font-weight: 300
+                color: #757575
+                height: 40px
+                line-height: 40px
+                background: #ffffff
+                cursor: pointer
+                .arrow
+                    margin-top: 0.3em
+                    margin-left: 1em
+            .custom-options
+                position: absolute
+                display: block
+                top: 100%
+                left: 0
+                right: 0
+                background: #fff
+                transition: all 0.5s
+                opacity: 0
+                visibility: hidden
+                pointer-events: none
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+                z-index: 2
+                .custom-option
+                    position: relative
+                    display: block
+                    padding: 0 1em
+                    font-size: 1em
+                    font-weight: 300
+                    color: #3b3b3b
+                    line-height: 60px
+                    cursor: pointer
+                    transition: all 0.5s
+                    &:hover
+                        cursor: pointer
+                        background-color: #f8f8f8
+                    &.selected
+                        background-color: #f8f8f8
+            &.open
+                .custom-options
+                    opacity: 1
+                    visibility: visible
+                    pointer-events: all
+        .du-select
+            min-width: 100px
+            height: 40px
+            font-family: 'Quicksand'
+            background-color: transparent
+            border: none
+            color: #757575
+            font-size: 1.2em
