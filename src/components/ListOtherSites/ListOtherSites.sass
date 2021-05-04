@@ -1,0 +1,19 @@
+@import './../../variables'
+.du-list-sites
+    &__link
+        display: flex
+        align-items: center
+        color: $s-color
+        text-decoration: none
+        font-size: .7em
+        transition: all .4s
+        &:hover
+            color: darken($s-color, 9)
+    &__item
+        margin-bottom: 10px
+        &__title
+            font-family: 'Quicksand', sans-serif
+        &__dist
+            margin-left: 1.1em
+            font-size: .9em
+            color: #757575

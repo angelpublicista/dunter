@@ -1,10 +1,10 @@
 import "./App.sass";
-import CardOtherSites from "./components/CardOtherSites/CardOtherSites";
+import ListOtherSites from "./components/ListOtherSites/ListOtherSites";
 
 function App() {
   return (
     <div className="App">
-      <CardOtherSites />
+        <ListOtherSites />
     </div>
   );
 }
