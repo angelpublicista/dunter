@@ -1,10 +1,10 @@
 import "./App.sass";
-import Subheading from "./components/Subheading/Subheading";
+import CardOtherSites from "./components/CardOtherSites/CardOtherSites";
 
 function App() {
   return (
     <div className="App">
-      <Subheading />
+      <CardOtherSites />
     </div>
   );
 }
