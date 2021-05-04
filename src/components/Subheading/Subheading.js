@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import './Subheading.sass';
 
 class Subheading extends Component {
-    render() {
+    render(props) {
         return (
             <section className="du-subheading-section">
                 <Container maxWidth="lg">
-                    <h1>Apartamento en venta - Chapinero</h1>
+                    <h1>{this.props.title}</h1>
                 </Container>
             </section>
         );

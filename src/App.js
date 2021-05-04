@@ -1,10 +1,10 @@
 import "./App.sass";
-import Subheading from "./components/Subheading/Subheading";
+import ListOtherSites from "./components/ListOtherSites/ListOtherSites";
 
 function App() {
   return (
     <div className="App">
-      <Subheading />
+        <ListOtherSites />
     </div>
   );
 }
