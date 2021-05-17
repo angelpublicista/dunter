@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import pink from '@material-ui/core/colors/pink';
 
 const theme = createMuiTheme({
   palette: {

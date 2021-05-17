@@ -1,0 +1,65 @@
+@import './../../_variables'
+
+.du-info-bar
+    display: flex
+    justify-content: space-between
+    border: 1px solid #707070
+    border-left: 8px solid $p-color
+    box-sizing: border-box
+    &__left
+        padding: 1em 2em
+        &__title
+            font-size: 1em
+            color: #2e2e2e
+        &__location
+            color: $t-color
+            display: block
+            margin: 3px 0
+        &__rating-stars
+            color: #FCBC5D
+            .du-star
+                cursor: pointer
+    &__right
+        display: flex
+        align-items: center
+        &__box-price
+            background-color: $s-color
+            height: 100%
+            color: white
+            padding: 1em 2em
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            .box-price
+                &__text
+                    display: block
+                    margin-bottom: .3em
+                &__number
+                    display: block
+                    font-weight: bold
+                    font-size: 20px
+        &__fav
+            padding: 1em 2em
+            display: block
+            border: 1px solid #707070
+            border-top: 0px
+            border-bottom: 0px
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            svg
+                path
+                    transition: $tr
+            &:hover
+                color: $p-color
+                svg
+                    transition: $tr
+                    path
+                        fill: $p-color
+        &__code
+            padding: 1em 2em
+            color: $s-color
+            font-weight: bold

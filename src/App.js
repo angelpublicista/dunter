@@ -1,10 +1,10 @@
 import "./App.sass";
-import SorterBar from "./components/SorterBar/SorterBar";
+import InfoBar from "./components/InfoBar/InfoBar";
 
 function App() {
   return (
     <div className="App">
-        <SorterBar />
+        <InfoBar />
     </div>
   );
 }
