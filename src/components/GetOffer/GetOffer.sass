@@ -1,0 +1,30 @@
+@import './../../_variables'
+.du-get-offer
+    .du-form-group
+        display: flex
+        .du-form-control
+            height: 50px
+            border: 1px solid white
+            border-right: none
+            border-radius: 50px 0 0 50px
+            padding: 0 2em
+            outline: none
+            font-size: 15px
+            color: white
+            font-family: 'Quicksand', sans-serif
+            background-color: transparent
+            &::placeholder
+                color: white
+        .du-btn-get
+            display: inline-block
+            background-color: $p-color
+            border: 1px solid $p-color
+            padding: 0 1em
+            border-radius: 0px 50px 50px 0px
+            cursor: pointer
+    &.style-dark
+        .du-form-control
+            border-color: $t-color
+            color: $t-color
+            &::placeholder
+                color: $t-color
