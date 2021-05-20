@@ -1,0 +1,27 @@
+@import "./../../_variables"
+
+.du-menu-aside
+    background-color: $blue-dark
+    color: white
+    svg
+        color: white
+    .du-update-plan
+        width: 100%
+        margin: 1em 0
+        height: 50px
+        border-radius: 5px !important
+        svg
+            margin-right: 5px
+    &__top-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1em
+        background-color: #023D6A
+    &__list
+        padding: 1em !important
+        li
+            min-height: 50px
+            border-radius: 5px !important
+            &.active
+                background-color: rgba(255, 255, 255, .2)

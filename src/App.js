@@ -1,10 +1,10 @@
 import "./App.sass";
-import GetOffer from "./components/GetOffer/GetOffer";
+import MenuAside from "./components/MenuAside/MenuAside";
 
 function App() {
   return (
     <div className="App">
-        <GetOffer />
+        <MenuAside />
     </div>
   );
 }
